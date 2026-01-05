@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "version": "5.1",
+    "standard": "Golden Apple",
+    "engine_compatibility": "v5_engine.py",
+    "note": "Phonetic code optimized for Suno/Udio vocal clarity."
+  },
+  "v5_data": {
+    "forgiveness": "fuh-GIV-nessss [long sustain]",
+    "faith": "fay-ay-thhh [airy]",
+    "power": "POW-errr [grit]",
+    "bridge": "bri-idj [sharp stop]",
+    "heaven": "HEH-vunnn [ethereal]",
+    "guitar": "gih-TAAR [crunch]",
+    "spirit": "SPEER-it [clear]",
+    "victory": "vick-tuh-REEE [high energy]",
+    "peace": "peee-sssss [soft exhale]",
+    "believe": "bee-LEEV [rising tone]"
+  }
+}
