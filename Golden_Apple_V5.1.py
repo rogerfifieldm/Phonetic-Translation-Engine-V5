@@ -1,8 +1,7 @@
 import json
 
-# --- THIS IS YOUR V5.1 GOLDEN APPLE GLOSSARY ---
+# --- GOLDEN APPLE V5.1 MASTER GLOSSARY ---
 glossary_data = {
-    # --- UNIVERSAL POWER PACK ---
     "faith": "fay-ay-thhh [airy]",
     "power": "POW-errr [grit]",
     "hallelujah": "hal-lay-LOO-yah [soaring]",
@@ -12,6 +11,9 @@ glossary_data = {
     "victory": "VIC-tuh-ree [punchy]",
     "freedom": "FREE-dum [open]",
     "glory": "GLOR-ee-ay [sustained]",
+    "miracle": "MEER-uh-kull [ethereal]",
+    "blessing": "BLEH-sing [warm]",
+    "spirit": "SPEER-it [breath]",
     
     # --- LATANKAL (LATIN/TROPICAL) ---
     "corazon": "ko-rah-SOHN [vibrant]",
@@ -26,30 +28,26 @@ glossary_data = {
     "fay-ay-thhh [airy]": "faith",
     "hal-lay-LOO-yah [soaring]": "hallelujah",
     "ko-rah-SOHN [vibrant]": "corazon",
-    "uh-NOYN-ted [reverb]": "anointed"
+    "uh-NOYN-ted [reverb]": "anointed",
+    "MEER-uh-kull [ethereal]": "miracle"
 }
 
-# --- THIS IS YOUR ENGINE LOGIC ---
 def golden_apple_engine():
     print("--- Golden Apple V5.1 Engine Active ---")
-    print("Test the 'Back Logic' by typing the phonetic spelling!")
     
     while True:
-        user_input = input("\nUser Input: ").strip() # Removed .lower() to keep your bracket tags [airy] safe
+        user_input = input("\nUser Input: ").strip()
         
         if user_input.lower() == 'q':
             print("Shutting down... Straining forward (Phil 3:13)")
             break
         
         if user_input in glossary_data:
-            result = glossary_data[user_input]
-            print(f"Engine Output: {result}")
+            print(f"Engine Output: {glossary_data[user_input]}")
+        elif user_input.lower() in glossary_data:
+            print(f"Engine Output: {glossary_data[user_input.lower()]}")
         else:
-            # Check lowercase just in case for standard words
-            if user_input.lower() in glossary_data:
-                print(f"Engine Output: {glossary_data[user_input.lower()]}")
-            else:
-                print("Result: Word not in V5.1 Starter Pack yet.")
+            print("Result: Word not in V5.1 Database.")
 
-# Run the test
-golden_apple_engine()
+if __name__ == "__main__":
+    golden_apple_engine()
